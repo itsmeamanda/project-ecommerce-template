@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Online</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar, .footer {
+      background-color:  #C6893A;
+    }
+    .footer {
+      color: white;
+    }
+    .carousel-item img {
+      height: 400px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="image\logo.webp" alt="Logo" class="me-2" style="height: 50px;">
+        Belanja Tanpa Batas
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Produk</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>  
+
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="position-relative">
+          <!-- Gambar Besar -->
+          <img src="image\5f2124ee766032d850899008ada7a85c.jpg" class="d-block w-100" alt="Produk">
+          
+          <!-- Teks di atas gambar dan tombol di tengah -->
+          <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+            <h3 class="display-4"><b>Percantik Gayamu, Temukan Pilihan Baju Keren di Sini!</b></h3>
+            <a href="#" class="btn" style="background-color: #C6893A; color: white; border: none; padding: 10px 20px; font-size: 18px;"><b>Beli Sekarang</b></a>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fitur Unggulan -->
+<div class="container my-5">
+    <div class="row text-center">
+      <!-- Produk Terlengkap -->
+      <div class="col-md-3 mb-4">
+        <img src="image\ikon1.gif" alt="Produk Terlengkap" class="mb-3" width="50" height="50">
+        <h5>Produk Terlengkap</h5>
+        <p class="text-muted">Kami menyediakan berbagai produk yang lengkap untuk kebutuhan Anda.</p>
+      </div>
+      <!-- Kualitas Terjamin -->
+      <div class="col-md-3 mb-4">
+        <img src="image\ikon22.gif" alt="Kualitas Terjamin" class="mb-3" width="50" height="50">
+        <h5>Kualitas Terjamin</h5>
+        <p class="text-muted">Semua produk kami dijamin memiliki kualitas terbaik.</p>
+      </div>
+      <!-- Efisiensi Biaya -->
+      <div class="col-md-3 mb-4">
+        <img src="image\ikon3.gif" alt="Efisiensi Biaya" class="mb-3" width="50" height="50">
+        <h5>Efisiensi Biaya</h5>
+        <p class="text-muted">Harga yang kompetitif untuk mendukung penghematan biaya Anda.</p>
+      </div>
+      <!-- Fleksibilitas -->
+      <div class="col-md-3 mb-4">
+        <img src="image\ikon4.gif" alt="Fleksibilitas" class="mb-3" width="50" height="50">
+        <h5>Fleksibilitas</h5>
+        <p class="text-muted">Pelayanan fleksibel sesuai kebutuhan Anda.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <!-- Kategori dan Bestseller -->
+      <div class="col-md-3">
+        <div class="category-list">
+          <div class="card mb-4">
+            <div class="card-header" style="background-color: #E5C07B">
+              <b>Kategori</b>
+            </div>
+            <div class="card-body">
+              <ul class="list-group">
+                <li class="list-group-item"><a href="#">Baju Pria</a></li>
+                <li class="list-group-item"><a href="#">Baju Wanita</a></li>
+                <li class="list-group-item"><a href="#">Aksesoris</a></li>
+                <li class="list-group-item"><a href="#">Sepatu</a></li>
+                <li class="list-group-item"><a href="#">Tas</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bestseller-list">
+          <div class="card mb-4">
+            <div class="card-header" style="background-color: #E5C07B">
+              <b>Bestseller</b>
+            </div>
+            <div class="card-body">
+              <ul class="list-group">
+                <li class="list-group-item"><a href="#">Baju Casual Chic</a></li>
+                <li class="list-group-item"><a href="#">Baju Tunic Dress</a></li>
+                <li class="list-group-item"><a href="#">Baju Pria Layering Style</a></li>
+                <li class="list-group-item"><a href="#">Baju Skater Skirt</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      <!-- Produk -->
+      <div class="col-md-9">
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-md-3">
+            <div class="card">
+              <a href="single product.html">
+             <img src="image\i.jpg" class="card-img-top" alt="Produk 1">
+             </a>
+              <div class="card-body">
+                <h5 class="text-center">Black Shirt</h5>
+                <p class="text-center">Harga: Rp 100.000</p>
+                <a href="#" class="btn btn-primary">Keranjang</a>
+                <a href="#" class="btn btn-warning">Beli</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-md-3">
+            <div class="card">
+              <img src="image\b2.jpg" class="card-img-top" alt="Produk 2">
+              <div class="card-body">
+                <h5 class="text-center">Korean Tranquil</h5>
+                <p class="text-center">Harga: Rp 150.000</p>
+                <a href="#" class="btn btn-primary">Keranjang</a>
+                <a href="#" class="btn btn-warning">Beli</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-3">
+            <div class="card">
+              <img src="image\co2.jpg" class="card-img-top" alt="Produk 3">
+              <div class="card-body">
+                <h5 class="text-center">ShadeMaster Sunglasses</h5>
+                <p class="text-center">Harga: Rp 50.000</p>
+                <a href="#" class="btn btn-primary">Keranjang</a>
+                <a href="#" class="btn btn-warning">Beli</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-md-3">
+            <div class="card">
+              <img src="image\b8.jpg" class="card-img-top" alt="Produk 4">
+              <div class="card-body">
+                <h5 class="text-center">Kstyle Elegance</h5>
+                <p class="text-center">Harga: Rp 180.000</p>
+                <a href="#" class="btn btn-primary">Keranjang</a>
+                <a href="#" class="btn btn-warning">Beli</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="col-md-3">
+            <div class="card">
+              <img src="image\co1.jpg" class="card-img-top" alt="Produk 5">
+              <div class="card-body">
+                <h5 class="text-center">Classic Man</h5>
+                <p class="text-center">Harga: Rp 200.000</p>
+                <a href="#" class="btn btn-primary">Keranjang</a>
+                <a href="#" class="btn btn-warning">Beli</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="col-md-3">
+            <div class="card">
+              <img src="image\tas2.jpg" class="card-img-top" alt="Produk 6">
+              <div class="card-body">
+                <h5 class="text-center">StellarFlex Bag</h5>
+                <p class="text-center">Harga: Rp 115.000</p>
+                <a href="#" class="btn btn-primary">Keranjang</a>
+                <a href="#" class="btn btn-warning">Beli</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 7 -->
+          <div class="col-md-3">
+            <div class="card">
+              <img src="image\b7.jpg" class="card-img-top" alt="Produk 7">
+              <div class="card-body">
+                <h5 class="text-center">Seoul Chic Wear</h5>
+                <p class="text-center">Harga: Rp 200.000</p>
+                <a href="#" class="btn btn-primary">Keranjang</a>
+                <a href="#" class="btn btn-warning">Beli</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 8 -->
+          <div class="col-md-3">
+            <div class="card">
+              <img src="image\s4.jpg" class="card-img-top" alt="Produk 8">
+              <div class="card-body">
+                <h5 class="text-center">ChicGlide Flats</h5>
+                <p class="text-center">Harga: Rp 150.000</p>
+                <a href="#" class="btn btn-primary">Keranjang</a>
+                <a href="#" class="btn btn-warning">Beli</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div><br>
+<div class="row">
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+      <div class="col-md-3">
+        <strong>Layanan Pelanggan</strong>
+        <ul>
+          <li>Bantuan</li>
+          <li>Metode Pembayaran</li>
+          <li>Gratis Ongkir</li>
+          <li>Lacak Pembelian</li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <strong>Pengiriman</strong><br>
+        <img src="image/pengi.png" width="300" alt="Pengi Image">
+      </div>
+      <div class="col-md-3">
+        <strong>Sosial Media</strong>
+        <p>
+          <li>Facebook</li>
+          <li>Instagram</li>
+          <li>Twiter</li>
+          <li>Whatsapp</li>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <strong>Pembayaran</strong><br>
+        <img src="image/bayar.png" width="300" alt="Bayar Image">
+
+      </div>
+      </div>
+  <!-- Footer -->
+  <footer class="footer py-3 mt-5">
+    <div class="container text-center">
+      <p>&copy; 2024 Amanda Shop. All Rights Reserved.</p>
+      <p>Designed with 💚 by Amanda Juliarta.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
